@@ -1,0 +1,38 @@
+{
+  "name": "genpark-enterprise-agent-permission-boundary-governor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Enterprise secure execution environment for multi-agent workflows & permission boundary governor.",
+  "author": "genpark",
+  "category": "security",
+  "tags": [
+    "permission-boundary",
+    "agent-sandbox",
+    "security-governor",
+    "enterprise-rbac",
+    "ph-august16"
+  ],
+  "inputs": {
+    "agent_id": {
+      "type": "string"
+    },
+    "requested_action": {
+      "type": "string"
+    },
+    "target_resource": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "access_granted": {
+      "type": "boolean"
+    },
+    "policy_decision": {
+      "type": "string"
+    },
+    "audit_log_id": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
